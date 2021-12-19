@@ -11,6 +11,7 @@
 		37E2CF88276FA7FD009C9E30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CF87276FA7FD009C9E30 /* ContentView.swift */; };
 		37E2CF8A276FA7FE009C9E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2CF89276FA7FE009C9E30 /* Assets.xcassets */; };
 		37E2CF8D276FA7FE009C9E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2CF8C276FA7FE009C9E30 /* Preview Assets.xcassets */; };
+		37E2CF95276FB0ED009C9E30 /* SingleSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CF94276FB0ED009C9E30 /* SingleSelectionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		37E2CF89276FA7FE009C9E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E2CF8C276FA7FE009C9E30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37E2CF8E276FA7FE009C9E30 /* TRPGHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TRPGHelper.entitlements; sourceTree = "<group>"; };
+		37E2CF94276FB0ED009C9E30 /* SingleSelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				37E2CF85276FA7FD009C9E30 /* TRPGHelperApp.swift */,
 				37E2CF87276FA7FD009C9E30 /* ContentView.swift */,
+				37E2CF94276FB0ED009C9E30 /* SingleSelectionList.swift */,
 				37E2CF89276FA7FE009C9E30 /* Assets.xcassets */,
 				37E2CF8E276FA7FE009C9E30 /* TRPGHelper.entitlements */,
 				37E2CF8B276FA7FE009C9E30 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				37E2CF88276FA7FD009C9E30 /* ContentView.swift in Sources */,
 				37E2CF86276FA7FD009C9E30 /* TRPGHelperApp.swift in Sources */,
+				37E2CF95276FB0ED009C9E30 /* SingleSelectionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
