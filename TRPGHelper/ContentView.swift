@@ -35,13 +35,16 @@ struct AbilityList: View {
     @EnvironmentObject var abilityStore: AbilityStore
 
     var body: some View {
-        List(selection: self.$abilityStore.selectedAbility) {
-            ForEach(Array(abilityStore.abilities.enumerated()),
-                    id: \.element) { index, Ability in
-                AbilityRow(Ability: Ability)
-          }
+        VStack {
+            List(selection: self.$abilityStore.selectedAbility) {
+                ForEach(Array(abilityStore.abilities.enumerated()),
+                        id: \.element) { index, Ability in
+                    AbilityRow(Ability: Ability)
+              }
+            }
+            .listStyle(SidebarListStyle())
+            
         }
-        .listStyle(SidebarListStyle())
     }
 }
 
@@ -111,12 +114,25 @@ class AbilityStore: ObservableObject {
         }
     }
     
+    private let fileManager = FileManager()
+    
     public func saveAbilities(path: String) {
-        do {
-            try (abilities as NSArray).write(toFile: path, atomically: true)
+        let data = try? JSONEncoder().encode(abilities)
+        if fileManager.createFile(atPath: path, contents: data) {
             print("File created at \(path)")
-        } catch let error as NSError {
-            print("could't create file text.txt because of error: \(error)")
+        } else {
+            print("could't create file text.txt")
+        }
+    }
+    
+    public func loadAbilities(path: String) {
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let decodedData = (try JSONDecoder().decode([Ability].self, from: data))
+            abilities = decodedData
+            
+        } catch let error {
+            print("Error in load. error: \(error)")
         }
     }
 }

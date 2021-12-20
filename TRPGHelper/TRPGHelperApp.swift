@@ -27,7 +27,13 @@ struct TRPGHelperApp: App {
             }
             CommandGroup(before: CommandGroupPlacement.newItem) {
                 Button("Load") {
-                    print("before item")
+                    let panel = NSOpenPanel()
+                    panel.canChooseDirectories = false
+                    if panel.runModal() == .OK {
+                        if let url = panel.url {
+                            abilityStore.loadAbilities(path: url.path)
+                        }
+                    }
                 }
             }
         }
