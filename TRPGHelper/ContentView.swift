@@ -111,8 +111,13 @@ class AbilityStore: ObservableObject {
         }
     }
     
-    public func saveAbilities(url: URL) {
-        try? (abilities as NSArray).write(to: url, atomically: true)
+    public func saveAbilities(path: String) {
+        do {
+            try (abilities as NSArray).write(toFile: path, atomically: true)
+            print("File created at \(path)")
+        } catch let error as NSError {
+            print("could't create file text.txt because of error: \(error)")
+        }
     }
 }
 

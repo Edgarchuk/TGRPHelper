@@ -19,9 +19,8 @@ struct TRPGHelperApp: App {
                     let panel = NSSavePanel()
                     if panel.runModal() == .OK {
                         if let url = panel.url {
-                            abilityStore.saveAbilities(url: url)
+                            abilityStore.saveAbilities(path: url.path)
                         }
-                        print(panel.url)
                     }
                     
                 }
