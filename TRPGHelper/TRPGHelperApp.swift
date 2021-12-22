@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct TRPGHelperApp: App {
-    let abilityStore = AbilityStore()
+    let abilityStore = AbilityListViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView().environmentObject(abilityStore)

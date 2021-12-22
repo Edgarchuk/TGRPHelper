@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3712245B2770B039007C41DB /* AbilityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712245A2770B039007C41DB /* AbilityListViewModel.swift */; };
+		3712245E2770F1E8007C41DB /* AbilityList + AbilityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712245D2770F1E8007C41DB /* AbilityList + AbilityRow.swift */; };
+		371224602770F283007C41DB /* AbilityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712245F2770F283007C41DB /* AbilityDetail.swift */; };
+		371224622770F2AE007C41DB /* AbilityInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371224612770F2AE007C41DB /* AbilityInfoView.swift */; };
+		371224642770F2E5007C41DB /* RandomCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371224632770F2E5007C41DB /* RandomCubeView.swift */; };
+		37C97E692773EA4800999A1E /* ChecBoxVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E682773EA4800999A1E /* ChecBoxVIew.swift */; };
+		37C97E6B2773EEC300999A1E /* EffectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E6A2773EEC300999A1E /* EffectListView.swift */; };
 		37E2CF86276FA7FD009C9E30 /* TRPGHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CF85276FA7FD009C9E30 /* TRPGHelperApp.swift */; };
 		37E2CF88276FA7FD009C9E30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CF87276FA7FD009C9E30 /* ContentView.swift */; };
 		37E2CF8A276FA7FE009C9E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2CF89276FA7FE009C9E30 /* Assets.xcassets */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3712245A2770B039007C41DB /* AbilityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityListViewModel.swift; sourceTree = "<group>"; };
+		3712245D2770F1E8007C41DB /* AbilityList + AbilityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AbilityList + AbilityRow.swift"; sourceTree = "<group>"; };
+		3712245F2770F283007C41DB /* AbilityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityDetail.swift; sourceTree = "<group>"; };
+		371224612770F2AE007C41DB /* AbilityInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityInfoView.swift; sourceTree = "<group>"; };
+		371224632770F2E5007C41DB /* RandomCubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCubeView.swift; sourceTree = "<group>"; };
+		37C97E682773EA4800999A1E /* ChecBoxVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecBoxVIew.swift; sourceTree = "<group>"; };
+		37C97E6A2773EEC300999A1E /* EffectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectListView.swift; sourceTree = "<group>"; };
 		37E2CF82276FA7FD009C9E30 /* TRPGHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRPGHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E2CF85276FA7FD009C9E30 /* TRPGHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPGHelperApp.swift; sourceTree = "<group>"; };
 		37E2CF87276FA7FD009C9E30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3712245C2770F1A0007C41DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37E2CF94276FB0ED009C9E30 /* SingleSelectionList.swift */,
+				3712245D2770F1E8007C41DB /* AbilityList + AbilityRow.swift */,
+				3712245F2770F283007C41DB /* AbilityDetail.swift */,
+				371224612770F2AE007C41DB /* AbilityInfoView.swift */,
+				371224632770F2E5007C41DB /* RandomCubeView.swift */,
+				37C97E682773EA4800999A1E /* ChecBoxVIew.swift */,
+				37C97E6A2773EEC300999A1E /* EffectListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		37E2CF79276FA7FD009C9E30 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +82,10 @@
 		37E2CF84276FA7FD009C9E30 /* TRPGHelper */ = {
 			isa = PBXGroup;
 			children = (
+				3712245C2770F1A0007C41DB /* View */,
 				37E2CF85276FA7FD009C9E30 /* TRPGHelperApp.swift */,
 				37E2CF87276FA7FD009C9E30 /* ContentView.swift */,
-				37E2CF94276FB0ED009C9E30 /* SingleSelectionList.swift */,
+				3712245A2770B039007C41DB /* AbilityListViewModel.swift */,
 				37E2CF89276FA7FE009C9E30 /* Assets.xcassets */,
 				37E2CF8E276FA7FE009C9E30 /* TRPGHelper.entitlements */,
 				37E2CF8B276FA7FE009C9E30 /* Preview Content */,
@@ -142,9 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3712245E2770F1E8007C41DB /* AbilityList + AbilityRow.swift in Sources */,
+				371224622770F2AE007C41DB /* AbilityInfoView.swift in Sources */,
+				371224642770F2E5007C41DB /* RandomCubeView.swift in Sources */,
+				37C97E6B2773EEC300999A1E /* EffectListView.swift in Sources */,
+				3712245B2770B039007C41DB /* AbilityListViewModel.swift in Sources */,
 				37E2CF88276FA7FD009C9E30 /* ContentView.swift in Sources */,
+				371224602770F283007C41DB /* AbilityDetail.swift in Sources */,
 				37E2CF86276FA7FD009C9E30 /* TRPGHelperApp.swift in Sources */,
 				37E2CF95276FB0ED009C9E30 /* SingleSelectionList.swift in Sources */,
+				37C97E692773EA4800999A1E /* ChecBoxVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
