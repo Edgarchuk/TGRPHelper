@@ -47,7 +47,7 @@ struct Ability: Codable, Hashable, Identifiable {
     func getBonus() -> Int {
         var result: Int = bonus
         effects.forEach {
-            result += $0.bonus
+            result += $0.isActive ? $0.bonus : 0
         }
         return result
     }
