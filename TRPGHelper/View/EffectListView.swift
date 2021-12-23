@@ -41,6 +41,6 @@ struct EffectListView: View {
             }
             .padding(.leading, 5)
             .background(.background)
-        }.frame(width: 400)
+        }
     }
 }

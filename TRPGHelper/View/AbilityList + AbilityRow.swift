@@ -14,7 +14,8 @@ struct AbilityList: View {
                     AbilityRow(Ability: Ability)
               }
             }
-            .listStyle(SidebarListStyle())
+            .listStyle(.plain)
+            
             Spacer()
             HStack {
                 Button("+") {

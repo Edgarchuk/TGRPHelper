@@ -10,30 +10,29 @@ import SwiftUI
 @main
 struct TRPGHelperApp: App {
     let abilityStore = AbilityListViewModel()
+    let playerViewModel = PlayerViewModel()
+    let saverViewModel: SaverViewModel
+    
+    init() {
+        saverViewModel = .init(abilityViewModel: abilityStore,
+                               playerViewModel: playerViewModel)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(abilityStore)
+            Sidebar()
+                .environmentObject(abilityStore)
+                .environmentObject(playerViewModel)
         }.commands {
+            SidebarCommands()
             CommandGroup(before: CommandGroupPlacement.newItem) {
                 Button("Save") {
-                    let panel = NSSavePanel()
-                    if panel.runModal() == .OK {
-                        if let url = panel.url {
-                            abilityStore.saveAbilities(path: url.path)
-                        }
-                    }
-                    
+                    saverViewModel.save()
                 }
             }
             CommandGroup(before: CommandGroupPlacement.newItem) {
                 Button("Load") {
-                    let panel = NSOpenPanel()
-                    panel.canChooseDirectories = false
-                    if panel.runModal() == .OK {
-                        if let url = panel.url {
-                            abilityStore.loadAbilities(path: url.path)
-                        }
-                    }
+                    saverViewModel.load()
                 }
             }
         }
