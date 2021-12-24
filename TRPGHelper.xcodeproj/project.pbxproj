@@ -22,6 +22,12 @@
 		37C97E79277500EF00999A1E /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E78277500EF00999A1E /* PlayerViewModel.swift */; };
 		37C97E7B2775047700999A1E /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E7A2775047700999A1E /* Saver.swift */; };
 		37C97E7D2775062800999A1E /* SaverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E7C2775062800999A1E /* SaverViewModel.swift */; };
+		37C97E7F2775100A00999A1E /* Backpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E7E2775100A00999A1E /* Backpack.swift */; };
+		37C97E81277511C700999A1E /* BackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E80277511C700999A1E /* BackpackView.swift */; };
+		37C97E832775123000999A1E /* BackpackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E822775123000999A1E /* BackpackViewModel.swift */; };
+		37C97E8527751B6B00999A1E /* PlayerSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E8427751B6B00999A1E /* PlayerSkills.swift */; };
+		37C97E8727751E9500999A1E /* PlayerSkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E8627751E9500999A1E /* PlayerSkillsViewModel.swift */; };
+		37C97E892775206000999A1E /* PlayerSkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C97E882775206000999A1E /* PlayerSkillsView.swift */; };
 		37E2CF86276FA7FD009C9E30 /* TRPGHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CF85276FA7FD009C9E30 /* TRPGHelperApp.swift */; };
 		37E2CF8A276FA7FE009C9E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2CF89276FA7FE009C9E30 /* Assets.xcassets */; };
 		37E2CF8D276FA7FE009C9E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2CF8C276FA7FE009C9E30 /* Preview Assets.xcassets */; };
@@ -44,6 +50,12 @@
 		37C97E78277500EF00999A1E /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		37C97E7A2775047700999A1E /* Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
 		37C97E7C2775062800999A1E /* SaverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaverViewModel.swift; sourceTree = "<group>"; };
+		37C97E7E2775100A00999A1E /* Backpack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backpack.swift; sourceTree = "<group>"; };
+		37C97E80277511C700999A1E /* BackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackView.swift; sourceTree = "<group>"; };
+		37C97E822775123000999A1E /* BackpackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackViewModel.swift; sourceTree = "<group>"; };
+		37C97E8427751B6B00999A1E /* PlayerSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSkills.swift; sourceTree = "<group>"; };
+		37C97E8627751E9500999A1E /* PlayerSkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSkillsViewModel.swift; sourceTree = "<group>"; };
+		37C97E882775206000999A1E /* PlayerSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSkillsView.swift; sourceTree = "<group>"; };
 		37E2CF82276FA7FD009C9E30 /* TRPGHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRPGHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E2CF85276FA7FD009C9E30 /* TRPGHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPGHelperApp.swift; sourceTree = "<group>"; };
 		37E2CF89276FA7FE009C9E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +88,8 @@
 				37C97E6C2774EB3A00999A1E /* Sidebar.swift */,
 				37C97E6E2774EBE600999A1E /* AbilityView.swift */,
 				37C97E702774F02E00999A1E /* PlayerInfoView.swift */,
+				37C97E80277511C700999A1E /* BackpackView.swift */,
+				37C97E882775206000999A1E /* PlayerSkillsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +100,8 @@
 				37C97E742775001C00999A1E /* Ability.swift */,
 				37C97E762775006200999A1E /* Player.swift */,
 				37C97E7A2775047700999A1E /* Saver.swift */,
+				37C97E7E2775100A00999A1E /* Backpack.swift */,
+				37C97E8427751B6B00999A1E /* PlayerSkills.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +112,8 @@
 				3712245A2770B039007C41DB /* AbilityListViewModel.swift */,
 				37C97E78277500EF00999A1E /* PlayerViewModel.swift */,
 				37C97E7C2775062800999A1E /* SaverViewModel.swift */,
+				37C97E822775123000999A1E /* BackpackViewModel.swift */,
+				37C97E8627751E9500999A1E /* PlayerSkillsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,10 +229,14 @@
 				3712245E2770F1E8007C41DB /* AbilityList + AbilityRow.swift in Sources */,
 				371224622770F2AE007C41DB /* AbilityInfoView.swift in Sources */,
 				371224642770F2E5007C41DB /* RandomCubeView.swift in Sources */,
+				37C97E8727751E9500999A1E /* PlayerSkillsViewModel.swift in Sources */,
 				37C97E6B2773EEC300999A1E /* EffectListView.swift in Sources */,
+				37C97E8527751B6B00999A1E /* PlayerSkills.swift in Sources */,
 				37C97E7D2775062800999A1E /* SaverViewModel.swift in Sources */,
+				37C97E832775123000999A1E /* BackpackViewModel.swift in Sources */,
 				3712245B2770B039007C41DB /* AbilityListViewModel.swift in Sources */,
 				37C97E6F2774EBE600999A1E /* AbilityView.swift in Sources */,
+				37C97E7F2775100A00999A1E /* Backpack.swift in Sources */,
 				371224602770F283007C41DB /* AbilityDetail.swift in Sources */,
 				37C97E7B2775047700999A1E /* Saver.swift in Sources */,
 				37E2CF86276FA7FD009C9E30 /* TRPGHelperApp.swift in Sources */,
@@ -223,7 +245,9 @@
 				37C97E752775001C00999A1E /* Ability.swift in Sources */,
 				37E2CF95276FB0ED009C9E30 /* SingleSelectionList.swift in Sources */,
 				37C97E712774F02E00999A1E /* PlayerInfoView.swift in Sources */,
+				37C97E892775206000999A1E /* PlayerSkillsView.swift in Sources */,
 				37C97E772775006200999A1E /* Player.swift in Sources */,
+				37C97E81277511C700999A1E /* BackpackView.swift in Sources */,
 				37C97E692773EA4800999A1E /* ChecBoxVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

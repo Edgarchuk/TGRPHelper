@@ -11,11 +11,15 @@ import SwiftUI
 struct TRPGHelperApp: App {
     let abilityStore = AbilityListViewModel()
     let playerViewModel = PlayerViewModel()
+    let backpackViewModel = BackpackViewModel()
+    let playerSkillsViewModel = PlayerSkillsViewModel()
     let saverViewModel: SaverViewModel
     
     init() {
         saverViewModel = .init(abilityViewModel: abilityStore,
-                               playerViewModel: playerViewModel)
+                               playerViewModel: playerViewModel,
+                               backpackViewModel: backpackViewModel,
+                               playerSkillsViewModel: playerSkillsViewModel)
     }
     
     var body: some Scene {
@@ -23,6 +27,8 @@ struct TRPGHelperApp: App {
             Sidebar()
                 .environmentObject(abilityStore)
                 .environmentObject(playerViewModel)
+                .environmentObject(backpackViewModel)
+                .environmentObject(playerSkillsViewModel)
         }.commands {
             SidebarCommands()
             CommandGroup(before: CommandGroupPlacement.newItem) {

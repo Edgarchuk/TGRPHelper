@@ -24,7 +24,8 @@ struct EffectListView: View {
                             }), formatter: NumberFormatter())
                     }
                 }
-            }.listStyle(.inset)
+            }
+            .listStyle(.inset)
             Spacer()
             HStack {
                 Button("+") {

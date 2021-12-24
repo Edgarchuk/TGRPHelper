@@ -10,6 +10,8 @@ import Foundation
 struct Saver: Codable {
     var abilities: [Ability] = .init()
     var player: Player = .init(name: "", bio: "")
+    var backpack: Backpack = .init()
+    var playerSkills: PlayerSkills = .init()
     
     public func save(path: String) {
         let fileManager = FileManager()
@@ -27,6 +29,8 @@ struct Saver: Codable {
             let decodedData = (try JSONDecoder().decode(Saver.self, from: data))
             abilities = decodedData.abilities
             player = decodedData.player
+            backpack = decodedData.backpack
+            playerSkills = decodedData.playerSkills
             
         } catch let error {
             print("Error in load. error: \(error)")

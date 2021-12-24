@@ -10,6 +10,12 @@ struct Sidebar: View {
                 NavigationLink(destination: PlayerInfoView()) {
                     Label("Player", systemImage: "gamecontroller")
                 }
+                NavigationLink(destination: BackpackView()) {
+                    Label("Backpack", systemImage: "bag")
+                }
+                NavigationLink(destination: PlayerSkillsView()) {
+                    Label("Skills", systemImage: "bolt")
+                }
             }.listStyle(.sidebar)
             .toolbar{
                 ToolbarItem(placement: .navigation){
